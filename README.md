@@ -1,5 +1,7 @@
 # Code-Collection
 Just my code collection
+File/Folder | Languange
+--- | --- |
 
 ## **SPLDV.cpp**
 Simple Linear equation with 2 variables solver
