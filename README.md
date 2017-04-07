@@ -3,7 +3,7 @@ Just my code collection
 
 | **File\/Folder** | **Languange** |
 | --- | --- |
-| (SPLDV.cpp)[#SPLDVcpp] | C++ |
+| [SPLDV.cpp](#spldvcpp) | C++ |
 
 ## SPLDV.cpp
 Simple Linear equation with 2 variables solver
