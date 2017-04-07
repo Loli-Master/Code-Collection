@@ -45,7 +45,7 @@ for each foreign currency :
     <Currency_Code> <Sell_Rate> <Buy_Rate>
 endfor
 <Number_Of_Currencies_Bank_Stored>
-for each foreign currency :
+for each currency :
     <Currency_Code> <Stored>
 endfor
 ```
