@@ -48,7 +48,7 @@ public class Calculator {
 	}
 
 	// convert infix input to postfix with comma separator
-	// shunting-yard algorithm
+	// shunting-yard algorithm https://en.wikipedia.org/wiki/Shunting-yard_algorithm
 	private ListChar postfix(String input) {
 		ListChar ans = new ListChar();// queue of tokens
 		ListChar ops = new ListChar();// stack of waiting operators
@@ -114,7 +114,7 @@ public class Calculator {
 		return ans;
 	}
 
-	// calculate using postfix
+	// calculate using postfix https://en.wikipedia.org/wiki/Reverse_Polish_notation
 	public double calculate() {
 		double ans = 0d;
 		ListDouble proc = new ListDouble();// stack of doubles
