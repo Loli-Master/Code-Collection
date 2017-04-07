@@ -42,11 +42,11 @@ One of my college tasks, processing file input ([Data.in](#datain-format)) for b
 <Local_Currency_Code>
 <Number_Of_Foreign_Currencies>
 for each foreign currency :
-<Currency_Code> <Sell_Rate> <Buy_Rate>
+    <Currency_Code> <Sell_Rate> <Buy_Rate>
 endfor
 <Number_Of_Currencies_Bank_Stored>
 for each foreign currency :
-<Currency_Code> <Stored>
+    <Currency_Code> <Stored>
 endfor
 ```
 #### Input Example:
