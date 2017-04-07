@@ -12,7 +12,7 @@ public class Main {
 		while (scan.hasNextLine()) {
 			calculator.set(scan.nextLine());
 			double ans = calculator.calculate();
-			System.out.printf("Answer: %.2f", ans);
+			System.out.printf("Answer: %.2f\n", ans);
 		}
 		scan.close();
 	}
