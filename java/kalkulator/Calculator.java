@@ -108,6 +108,7 @@ public class Calculator {
 				ans.insertLast(' ');
 			} else {
 				System.err.println("ERROR: BRACKET MISSING");
+				break;
 			}
 		}
 		return ans;
