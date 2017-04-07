@@ -7,7 +7,7 @@ Just my code collection
 | [mergesort.cpp](#mergesortcpp) | C++ |
 | [kalkulator](#kalkulator) | Java |
 
-## [SPLDV.cpp](SPLDV.cpp)
+## [SPLDV.cpp](cpp/SPLDV.cpp)
 Simple Linear equation with 2 variables solver
 ### Format Input:
 Read 2 general form (*ax + by = c*)
