@@ -5,7 +5,7 @@ Just my code collection
 | --- | --- |
 | [SPLDV.cpp](#spldvcpp) | C++ |
 | [mergesort.cpp](#mergesortcpp) | C++ |
-| [kalkulator] | Java |
+| [kalkulator](#kalkulator) | Java |
 
 ## SPLDV.cpp
 Simple Linear equation with 2 variables solver
