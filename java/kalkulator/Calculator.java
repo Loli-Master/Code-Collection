@@ -12,7 +12,7 @@ public class Calculator {
 			return false;
 		}
 	}
-	
+
 	// check if string is double
 	private boolean isDouble(String str) {
 		try {
@@ -48,7 +48,8 @@ public class Calculator {
 	}
 
 	// convert infix input to postfix with comma separator
-	// shunting-yard algorithm https://en.wikipedia.org/wiki/Shunting-yard_algorithm
+	// shunting-yard algorithm
+	// https://en.wikipedia.org/wiki/Shunting-yard_algorithm
 	private ListChar postfix(String input) {
 		ListChar ans = new ListChar();// queue of tokens
 		ListChar ops = new ListChar();// stack of waiting operators
@@ -114,13 +115,14 @@ public class Calculator {
 		return ans;
 	}
 
-	// calculate using postfix https://en.wikipedia.org/wiki/Reverse_Polish_notation
+	// calculate using postfix
+	// https://en.wikipedia.org/wiki/Reverse_Polish_notation
 	public double calculate() {
 		double ans = 0d;
 		ListDouble proc = new ListDouble();// stack of doubles
 		ListChar input = postfix(token);// queue of tokens
 		String[] post = input.toString().split(" ");
-		System.out.print(input);
+		// System.out.print(input);
 
 		for (String ins : post) {
 			if (isDouble(ins)) {

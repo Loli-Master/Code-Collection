@@ -9,9 +9,11 @@ public class Main {
 		Calculator calculator = new Calculator();
 		Scanner scan = new Scanner(System.in);
 		calculator.hello();
-		calculator.set(scan.nextLine());
-		double ans = calculator.calculate();
-		System.out.printf("Answer: %.2f",ans);
+		while (scan.hasNextLine()) {
+			calculator.set(scan.nextLine());
+			double ans = calculator.calculate();
+			System.out.printf("Answer: %.2f", ans);
+		}
 		scan.close();
 	}
 }
