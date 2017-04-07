@@ -17,7 +17,7 @@ Read integer N followed by N numbers of integer
 N a1 a2 ... aN
 ```
 ## **kalkulator**
-Simple scientific calculator in java with only 4 operators (+,-,*,/)
+Simple scientific calculator in java with only 4 operators ( '\+' , '\-' , '\*' , '\/' ) with brackets ( '(' , ')' )
 ### Format Input:
 Read input of string to calculate line by line
 #### Example:
