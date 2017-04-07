@@ -34,7 +34,7 @@ Read input of string to calculate line by line
 2.44*(64+6*6)
 ```
 ## [bankQueue](java/bankQueue)
-One of my college tasks, processing file input for bank currency exchanges
+One of my college tasks, processing file input ([Data.in](#datain-format)) for bank currency exchanges
 > Data.in must be located in folder "bankQueue"<br>
 > *actually it located in package folder* 
 ### Input Format:
