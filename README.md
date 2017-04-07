@@ -1,14 +1,16 @@
 # Code-Collection
 Just my code collection
 
-| **File\/Folder** | **Languange** |
+| **File/Folder** | **Languange** |
 | --- | --- |
 | [SPLDV.cpp](#spldvcpp) | C++ |
+| [mergesort.cpp](#mergesortcpp) | C++ |
+| [kalkulator] | Java |
 
 ## SPLDV.cpp
 Simple Linear equation with 2 variables solver
-Read 2 general form (*ax + by = c*)
 ### Format Input:
+Read 2 general form (*ax + by = c*)
 ```
 a1 b1 c1
 a2 b2 c2
