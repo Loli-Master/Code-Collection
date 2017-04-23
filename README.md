@@ -7,6 +7,7 @@ Just my code collection
 | [mergesort.cpp](#mergesortcpp) | C++ |
 | [kalkulator](#kalkulator) | Java |
 | [bankQueue](#bankqueue) | Java |
+| [RBTree](#rbtree) | Java|
 
 ## [SPLDV.cpp](cpp/SPLDV.cpp)
 Simple Linear equation with 2 variables solver
@@ -71,3 +72,5 @@ BUY 10 EUR
 SELL 5 EUR
 BUY 10 USD
 ```
+## [RBTree](java/Red-Black Tree)
+Simple Red-Black Tree
