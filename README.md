@@ -72,5 +72,5 @@ BUY 10 EUR
 SELL 5 EUR
 BUY 10 USD
 ```
-## [RBTree](java/Red-Black Tree)
+## [RBTree](java/Red-Black%20Tree)
 Simple Red-Black Tree
