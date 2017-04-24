@@ -103,9 +103,8 @@ public class RBT {
 				G.right = oldRight;
 			}
 			oldRight.parent = G;
-		}
-		else{
-			root=oldRight;
+		} else {
+			root = oldRight;
 		}
 		pivot.parent = oldRight;
 		// return oldRight;
@@ -125,9 +124,8 @@ public class RBT {
 				G.right = oldLeft;
 			}
 			oldLeft.parent = G;
-		}
-		else{
-			root=oldLeft;
+		} else {
+			root = oldLeft;
 		}
 		pivot.parent = oldLeft;
 		// return oldLeft;
@@ -190,6 +188,8 @@ public class RBT {
 		}
 	}
 
+	// DELETE METHODS
+	// ADAPTED FROM http://www.geeksforgeeks.org/red-black-tree-set-3-delete-2/
 	private Node min(Node node) {
 		Node ans = node;
 		if (ans.left != null) {
@@ -254,69 +254,67 @@ public class RBT {
 	private void doubleBlack(Node n) {
 		Node S = n.getSibling();
 		Node P = n.parent;
-		if(n==root){
-			//nothing :v
+		if (n == root) {
+			// nothing :v
 		}
-		//right
-		else if(S!=null&&!S.color&&S==P.right){
-			//rightright
-			if(S.right!=null&&S.right.color){
-				Node r=S.right;
+		// right
+		else if (S != null && !S.color && S == P.right) {
+			// rightright
+			if (S.right != null && S.right.color) {
+				Node r = S.right;
+				r.color = false;
 				rotateLeft(P);
-				r.color=false;
 			}
-			//rightleft
-			else if(S.left!=null&&S.left.color){
-				Node r=S.left;
+			// rightleft
+			else if (S.left != null && S.left.color) {
+				Node r = S.left;
+				r.color = false;
 				rotateRight(S);
 				rotateLeft(P);
-				r.color=false;
 			}
 		}
-		//left
-		else if(S!=null&&!S.color&&S==P.left){
-			//leftleft
-			if(S.left!=null&&S.left.color){
-				Node r=S.left;
+		// left
+		else if (S != null && !S.color && S == P.left) {
+			// leftleft
+			if (S.left != null && S.left.color) {
+				Node r = S.left;
+				r.color = false;
 				rotateRight(P);
-				r.color=false;
 			}
-			//leftright
-			else if(S.right!=null&&S.right.color){
-				Node r=S.right;
+			// leftright
+			else if (S.right != null && S.right.color) {
+				Node r = S.right;
+				r.color = false;
 				rotateLeft(S);
 				rotateRight(P);
-				r.color=false;
 			}
-		}
-		else if((S!=null&&!S.color)||S==null){
-			if(S!=null){
-				S.color=true;
+		} else if ((S != null && !S.color) || S == null) {
+			if (S != null) {
+				S.color = true;
 			}
-			P.color=false;
-			if(!P.color){
+			P.color = false;
+			if (!P.color) {
 				doubleBlack(P);
 			}
-		}
-		else if(S!=null&&S.color){
-			//right
-			if(P.right==S){
-				if(S.left!=null){
-					S.left.color=true;
-					//System.out.println("lol");
+		} else if (S != null && S.color) {
+			// right
+			if (P.right == S) {
+				if (S.left != null) {
+					S.left.color = true;
+					// System.out.println("lol");
 				}
+				S.color = false;
 				rotateLeft(P);
-				S.color=false;
-				//P.color=false;
+				// P.color=false;
 			}
-			//left
-			else if(P.left==S){
-				if(S.right!=null){
-					S.right.color=true;
+			// left
+			else if (P.left == S) {
+				if (S.right != null) {
+					S.right.color = true;
 				}
+				S.color = false;
 				rotateRight(P);
-				S.color=false;
-				//P.color=false;
+				// P.color=false;
 			}
 		}
 	}
