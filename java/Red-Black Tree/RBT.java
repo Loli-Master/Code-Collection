@@ -212,15 +212,12 @@ public class RBT {
 				if (node == root) {
 					root = null;
 				} else {
+					if (!node.color) {
+						doubleBlack(node);
+					}
 					if (node.parent.left == node) {
-						if (!node.color) {
-							doubleBlack(node);
-						}
 						node.parent.left = null;
 					} else {
-						if (!node.color) {
-							doubleBlack(node);
-						}
 						node.parent.right = null;
 					}
 				}
@@ -229,17 +226,14 @@ public class RBT {
 				if (node == root) {
 					root = now;
 				} else {
+					if (!node.color && !now.color) {
+						doubleBlack(now);
+					}
 					if (node.parent.left == node) {
 						node.parent.left = now;
-						if (!node.color && !now.color) {
-							doubleBlack(now);
-						}
 						now.parent = node.parent;
 					} else {
 						node.parent.right = now;
-						if (!node.color && !now.color) {
-							doubleBlack(now);
-						}
 						now.parent = node.parent;
 					}
 				}
