@@ -3,7 +3,7 @@ using namespace std;
 
 int n,A[1000];
 
-void gabung(int a, int b, int c, int d){
+void conquer(int a, int b, int c, int d){
 	int ki=0,ka=0,x=a;
 	const int n1=b-a+1,n2=d-c+1;
 	int L[n1],R[n2];
@@ -41,7 +41,7 @@ void divide(int left, int right){
 		int middle=(left+right)/2;
 		divide(left,middle);
 		divide(middle+1,right);
-		gabung(left,middle,middle+1,right);
+		conquer(left,middle,middle+1,right);
 	}
 }
 
