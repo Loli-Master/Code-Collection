@@ -168,15 +168,15 @@ inline float Vector2D::DotProduct(const Vector2D& left, const Vector2D& right) {
 
 inline float Vector2D::Angle(const Vector2D& origin, const Vector2D& target) {
 	return (acos(min(max((DotProduct(origin, target)) / (Magnitude(origin) * Magnitude(target)), (float) -1.0), (float) 1.0))
-	/ 3.14159265358979) * 180.0 * (signbit(origin.X * target.Y - origin.Y * target.X)?-1.0:1.0);
+	        / 3.14159265358979) * 180.0 * (signbit(origin.X * target.Y - origin.Y * target.X)?-1.0:1.0);
 }
 
 inline float Vector2D::Angle(const Vector2D& target, bool cartesian) {
-    if(cartesian){
-        return Angle(Vector2D(0, 1), target);
-    }else{
+	if(cartesian) {
+		return Angle(Vector2D(0, 1), target);
+	} else {
 		return Angle(Vector2D(0, -1), target);
-    }
+	}
 }
 
 Vector2D Vector2D::Zero(0,0);
